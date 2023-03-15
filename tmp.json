@@ -1,0 +1,17 @@
+[
+  {
+    "DateObserved": "2023-03-14 ",
+    "HourObserved": 19,
+    "LocalTimeZone": "MST",
+    "ReportingArea": "Seeley Lake",
+    "StateCode": "MT",
+    "Latitude": 47.1756,
+    "Longitude": -113.4762,
+    "ParameterName": "PM2.5",
+    "AQI": 15,
+    "Category": {
+      "Number": 1,
+      "Name": "Good"
+    }
+  }
+]
