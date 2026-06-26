@@ -47,7 +47,8 @@ func main() {
 	var weatherAPIObj []weatherAPI
 	json.Unmarshal(bodyBytes, &weatherAPIObj)
 
-	// fmt.Println(weatherAPIObj[0])
-	fmt.Printf("Location: %s, %s \n", weatherAPIObj[0].ReportingArea, weatherAPIObj[0].StateCode)
-	fmt.Printf("Air quality: %d (%s) \n", weatherAPIObj[0].AQI, weatherAPIObj[0].Category.Name)
+	for _, entry := range weatherAPIObj {
+		fmt.Printf("Location: %s, %s \n", entry.ReportingArea, entry.StateCode)
+		fmt.Printf("Air quality (%s): %d (%s) \n", entry.ParameterName, entry.AQI, entry.Category.Name)
+	}
 }
